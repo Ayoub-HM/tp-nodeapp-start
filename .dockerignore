@@ -1,0 +1,26 @@
+# Dépendances (on les réinstalle proprement dans l'image)
+node_modules/
+
+# Artefacts de build (on re-build dans l'image)
+dist/
+build/
+
+# Git metadata
+.git/
+.gitignore
+
+# Configuration CI/CD
+.gitlab-ci.yml
+
+# Fichiers d'environnement (SÉCURITÉ !)
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+Dockerfile
+.dockerignore
