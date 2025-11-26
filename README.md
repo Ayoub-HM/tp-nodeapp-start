@@ -33,7 +33,7 @@ Votre pipeline `.gitlab-ci.yml` devra respecter les contraintes suivantes :
 
 - **Environnement Staging (Pré-prod) :**
   - Déploiement **Automatique** sur la branche `main` (Vercel / Netlify).
-  - L'application doit afficher le numéro de version (Commit SHA). C'est possible en utilisant la variable d'environnement **VITE_COMMIT_SHA**.
+  - L'application doit afficher le numéro de version (Commit SHA). C'est possible en utilisant la variable d'environnement **VITE_APP_VERSION**.
 
 ### Bonus "Expert DevOps"
 
