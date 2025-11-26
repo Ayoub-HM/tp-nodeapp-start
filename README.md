@@ -26,7 +26,6 @@ Votre pipeline `.gitlab-ci.yml` devra respecter les contraintes suivantes :
   - `test` : Tests unitaires (Vitest).
   - `build` : Compilation de l'application React.
 - **Optimisation :**
-  - Utiliser le **Artéfacts** pour `node_modules` afin d'accélérer les jobs.
   - Le Job `build` doit exposer le dossier `build/` sous forme d'**Artifact**.
   - Les jobs `lint` et `test` doivent s'exécuter en **parallèle**.
 
