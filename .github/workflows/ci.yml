@@ -128,7 +128,7 @@ jobs:
         id: deploy_netlify
         if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
         run: |
-          npx --yes netlify-cli deploy --dir=build --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" --alias=staging --message="$GITHUB_SHA"
+          npx --yes netlify-cli deploy --no-build --dir=build --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" --alias=staging --message="$GITHUB_SHA"
           echo "deployment_status=deployed" >> "$GITHUB_OUTPUT"
 
   notify-discord:
